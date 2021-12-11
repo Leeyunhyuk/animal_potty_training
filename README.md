@@ -1,16 +1,19 @@
-# Animal_potty_training
+# 애완견 배변 훈련 디바이스 개발
 
+# 개발 배경
 
- This project consists of arduino file with main.cpp file, node js file.
- 
- 
- If you want receive push nofication to your android_cell_phone you need to make FCM and token of your phone. 
+ * 반려견 인구 및 1인 가구 수의 증가
+   - 반려견의 배변 훈련의 기회가 줄어듦
 
+ * 소프트웨어를 탑재한 디바이스 개발 시 
+   - 주인의 부재시에도 배변 훈련에 대한 보상이 가능
+   - 배변 패드의 교체 주기에 대한 알림 또한 알 수 있음
 
- What you need is jetson nano / raspberry pi , arduino, camera , 3 servo motors(sg90),  2 ultra_sonic sensor (hc-sr04), potty pad, food for animal.
+# 구현 기능
 
+ * 카메라를 통하여 패드 내의 대,소변의 색상의 면적을 측정
+ * 오염 면적 증가 시에 간식을 지급
+ * 초음파 센서를 이용하여 애완견이 패드에 있을 시 오염 면적 측정 중단
+ * 오염 면적 넓이가 기준 이상이 되면 어플리케이션에서 패드 교체 알림
 
- when animal have a bowel movement or urinate it detects the area of excrement. If this area getting bigger than before machine will give compensation. But, if there is no changed it will not give compensation.
-
-
-![image](https://github.com/JeewooChung/animal_potty_training/blob/main/animal_compensation.jpg)
+# 
